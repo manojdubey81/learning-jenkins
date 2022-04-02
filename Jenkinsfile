@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Hello From SCM') {
         steps {
-            echo 'Hello Brother'
+            echo -e '\e[32mHello Shyam Brother\e[0m'
         }
     }
   }
