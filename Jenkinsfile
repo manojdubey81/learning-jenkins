@@ -4,9 +4,13 @@ pipeline {
   stages {
     stage('Hello From SCM') {
         steps {
-            echo 'Hello Shyam Bhai'
+            echo 'Hello Shyam Baba'
         }
     }
+  post
   }
 }
+
+
+
 
