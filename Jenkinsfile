@@ -19,8 +19,8 @@ pipeline {
             ENV_URL="yahoo.com"
         }
         steps {
-           # echo "Hello ${params.PERSON}"
-           # echo "Biography: ${params.BIOGRAPHY}"
+           // echo "Hello ${params.PERSON}"
+           // echo "Biography: ${params.BIOGRAPHY}"
             sh 'echo ENV_URL=${ENV_URL}'
         }
     }
