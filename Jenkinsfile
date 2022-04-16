@@ -7,9 +7,9 @@ pipeline {
         }
     }
     stage('Stage View2') {
-            steps {
-                echo 'Second step is to check the second step results'
-            }
+        steps {
+            sh 'ls'
+        }
     }
   }
 }
