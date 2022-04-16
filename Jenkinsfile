@@ -1,8 +1,7 @@
 pipeline {
   agent any
-
   stages {
-    stage('Hello From SCM') {
+    stage('Hello Shyam Bharti') {
         steps {
             echo 'Shyam Baba ki Jai'
         }
