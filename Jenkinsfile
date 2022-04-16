@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent workstation
   stages {
     stage('Hello Shyam Bharti') {
         steps {
