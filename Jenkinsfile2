@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Non-Sequential Stage') {
             agent {
-                label 'any'
+                label 'workstation-agent'
             }
             steps {
                 echo "On Non-Sequential Stage"
