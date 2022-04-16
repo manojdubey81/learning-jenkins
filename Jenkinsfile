@@ -37,6 +37,14 @@ pipeline {
             sh 'echo ENV_URL=${ENV_URL}'
         }
     }
+    stage('When Example') {
+        when {
+            branch 'main'
+        }
+        steps {
+            echo 'Deploying'
+        }
+    }
   }
   post{
     always {
