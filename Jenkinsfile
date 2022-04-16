@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('stage View1') {
         steps {
-            echo 'Shyam Baba ki Jai'
+            echo 'Hello friends, welcome to Jenkins'
         }
     }
     stage('stage View2') {
             steps {
-                echo '(date)'
+                echo (date)
             }
     }
   }
