@@ -13,7 +13,7 @@ pipeline {
     }
   }
   post{
-    changed {
+    fixed {
         echo 'I will always say Hello again!'
     }
   }
