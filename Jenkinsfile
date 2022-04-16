@@ -1,12 +1,15 @@
 pipeline {
   agent any
   environment {
-    ENV_URL="roboshop.internal.com"
+    ENV_URL="google.com"
   }
   stages {
     stage('Stage View1') {
+        environment {
+            ENV_URL="yahoo.com"
+        }
         steps {
-            echo 'Hello friends, welcome to Jenkins'
+            sh 'echo ENV_URL=${ENV_URL}'
         }
     }
     stage('Stage View2') {
