@@ -12,8 +12,8 @@ pipeline {
             ENV_URL="yahoo.com"
         }
         steps {
+            echo "Hello ${params.PERSON}"
             sh 'echo ENV_URL=${ENV_URL}'
-            echo "hello $(params.PERSON)"
         }
     }
     stage('Stage View2') {
