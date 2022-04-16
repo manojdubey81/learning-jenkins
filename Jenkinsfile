@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    ENV_URL="roboshop.internal.com"
+  }
   stages {
     stage('Stage View1') {
         steps {
@@ -8,7 +11,7 @@ pipeline {
     }
     stage('Stage View2') {
         steps {
-            sh 'ls'
+            sh 'echo ENV_URL=${ENV_URL}'
         }
     }
   }
