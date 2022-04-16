@@ -6,7 +6,7 @@ pipeline {
             echo 'Shyam Baba ki Jai'
         }
         steps {
-             echo "$(date)"
+             echo '(date)'
         }
     }
   }
