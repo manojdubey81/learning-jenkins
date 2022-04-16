@@ -1,13 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('stage view') {
+    stage('stage View1') {
         steps {
             echo 'Shyam Baba ki Jai'
         }
-        steps {
-             echo '(date)'
-        }
+    }
+    stage('stage View2') {
+            steps {
+                echo '(date)'
+            }
     }
   }
 }
