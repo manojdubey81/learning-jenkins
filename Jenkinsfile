@@ -25,6 +25,14 @@ pipeline {
         }
     }
     stage('Stage View2') {
+         input {
+             message "Should we continue?"
+             ok "Yes, we should."
+             submitter "boss,DK"
+             parameters {
+                 string(name: 'PERSON', defaultValue: 'Mr Manoj', description: 'Who should I say hello to?')
+             }
+         }
         steps {
             sh 'echo ENV_URL=${ENV_URL}'
         }
