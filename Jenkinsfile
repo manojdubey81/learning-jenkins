@@ -10,9 +10,9 @@ pipeline {
 #    choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
 #    password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
 #  }
-  triggers {
-    cron('H/1 * * * *')
-  }
+#  triggers {
+#    cron('H/1 * * * *')
+#  }
   stages {
     stage('Stage View1') {
         environment {
@@ -25,14 +25,14 @@ pipeline {
         }
     }
     stage('Stage View2') {
-         input {
+        input {
              message "Should we continue?"
              ok "Yes, we should."
              submitter "boss,DK"
              parameters {
                  string(name: 'PERSON', defaultValue: 'Mr Manoj', description: 'Who should I say hello to?')
              }
-         }
+        }
         steps {
             sh 'echo ENV_URL=${ENV_URL}'
         }
