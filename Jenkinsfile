@@ -1,7 +1,7 @@
 pipeline {
-  agent workstation
+  agent any
   stages {
-    stage('Hello Shyam Bharti') {
+    stage('stage view') {
         steps {
             echo 'Shyam Baba ki Jai'
         }
