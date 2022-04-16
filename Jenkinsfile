@@ -4,7 +4,7 @@ pipeline {
     ENV_URL="google.com"
   }
   parameters{
-    string (name: 'PERSON', defaultvalue: 'Mr Manoj', description: 'I am pro devops guy')
+    string (name: 'PERSON', defaultValue: 'Mr Manoj', description: 'I am pro devops guy')
   }
   stages {
     stage('Stage View1') {
