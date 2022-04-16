@@ -39,7 +39,9 @@ pipeline {
     }
     stage('When Example') {
         when {
-            branch 'main'
+            expression{
+                GIT_BRANCH == 'main'
+            }
         }
         steps {
             echo 'Deploying'
