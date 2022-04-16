@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Stage View2') {
             steps {
-                ls
+                sh ls
             }
     }
   }
