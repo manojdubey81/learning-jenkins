@@ -8,13 +8,19 @@ pipeline {
     }
     stage('Stage View2') {
         steps {
-            sh 'ls'
+            sh ls
         }
     }
   }
   post{
-    fixed {
+    always {
         echo 'I will always say Hello again!'
+    }
+    changed {
+        echo 'I will always say Only changed result!'
+    }
+    fixed {
+        echo 'I will always say Hello always!'
     }
   }
 }
